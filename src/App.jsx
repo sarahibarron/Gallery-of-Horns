@@ -1,14 +1,16 @@
 import "./App.css";
-import "./reset.css";
-import Header from "./components/header";
-import Gallery from "./components/gallery";
-import Footer from "./components/footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import beastArr from "./components/data.json";
 
 function App() {
   return (
     <div>
       <Header />
-      <Gallery />
+      <main>
+        <Gallery beasts={beastArr} />
+      </main>
       <Footer />
     </div>
   );
