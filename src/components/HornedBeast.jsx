@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function HornedBeast({
   title,
-  image_url,
+  imageUrl,
   description,
   handleShowModal,
 }) {
@@ -15,11 +15,10 @@ export default function HornedBeast({
     <div className="beast">
       <h2>{title}</h2>
       <img
-        src={image_url}
+        src={imageUrl}
         alt={title}
-        onClick={() => handleShowModal({ title, image_url })}
+        onClick={() => handleShowModal({ title, imageUrl, description })}
       />
-      <p>{description}</p>
       <p onClick={handleClick}>{likes} ♥</p>
     </div>
   );

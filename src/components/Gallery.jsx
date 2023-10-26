@@ -8,7 +8,7 @@ export default function Gallery({ data, handleShowModal }) {
           <HornedBeast
             key={beast._id}
             title={beast.title}
-            imageUrl={beast.image_url}
+            imageUrl={beast.imageUrl}
             description={beast.description}
             handleShowModal={handleShowModal}
           />
