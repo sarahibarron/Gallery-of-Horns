@@ -3,7 +3,6 @@ export default function SelectedBeast({ shownBeast, handleShowModal }) {
     <div className="modal" onClick={handleShowModal}>
       <h2>{shownBeast.title}</h2>
       <img src={shownBeast.imageUrl} />
-      <p>{shownBeast.description}</p>
     </div>
   );
 }

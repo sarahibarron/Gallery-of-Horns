@@ -6,20 +6,22 @@ export default function HornedBeast({
   description,
   handleShowModal,
 }) {
+  // const [stateVariable, mutationFunction] = useState(initialValue)
   const [likes, setLikes] = useState(0);
 
   function handleClick() {
     setLikes(likes + 1);
   }
+
   return (
     <div className="beast">
       <h2>{title}</h2>
       <img
         src={imageUrl}
-        alt={title}
-        onClick={() => handleShowModal({ title, imageUrl, description })}
+        onClick={() => handleShowModal({ title, imageUrl })}
       />
-      <p onClick={handleClick}>{likes} ♥</p>
+      <p>{description}</p>
+      <p onClick={handleClick}>♥ {likes}</p>
     </div>
   );
 }
